@@ -7,6 +7,8 @@
 "==================    VIM本身配置    ====================="{{{
 
 set nocompatible							" 禁止vi兼容模式
+" set backspace=2								" set backspace=indent,eol,start
+											" 修复mac下遇到部分字符无法退格错误
 
 if has("syntax")
 	syntax on								" 语法高亮
