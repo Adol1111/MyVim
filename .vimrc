@@ -7,7 +7,7 @@
 "==================    VIM本身配置    ====================="{{{
 
 set nocompatible							" 禁止vi兼容模式
-" set backspace=2								" set backspace=indent,eol,start
+set backspace=2								" set backspace=indent,eol,start
 											" 修复mac下遇到部分字符无法退格错误
 
 if has("syntax")
@@ -71,7 +71,8 @@ endif
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set nobackup
+  "set backup		" keep a backup file
 endif
 
 "--状态行设置--
